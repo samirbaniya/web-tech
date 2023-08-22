@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    6. Write html code to create the form.<br><br>
+    <form style="border: 2px solid black; width:fit-content;padding:20px;" >
+        <label for="name">Name</label>
+        <input placeholder="Enter your name" type="text" id="name" name="name" ><br><br>
+
+        <label for="email">Email</label>
+        <input placeholder="Enter your email" type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password</label>
+        <input placeholder="Enter your password" type="password" id="password" name="password"><br><br>
+
+        <label for="dob">Birth Date</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="age">Age</label>
+        <input placeholder="Enter your age" type="number" id="age" name="age"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">female</label>
+        <input type="radio" id="other" name="gender">
+        <label for="other">other</label><br><br>
+
+        <label>Courses that i want to join for: </label>
+        <input type="checkbox" id="c" name="c">
+        <label for="c">C</label>
+        <input type="checkbox" id="c++" name="c++">
+        <label for="c++">C++</label>
+        <input type="checkbox" id="java" name="java">
+        <label for="java">java</label>
+        <input type="checkbox" id="javascript" name="javascript">
+        <label for="javascript">javascript</label><br><br>
+
+        <label for="payment">Payment</label>
+        <select name="payment" id="payment">
+            <option value="visa">visa</option>
+            <option value="credit card">credit card</option>
+            <option value="atm">atm</option>
+        </select><br><br>
+
+        <label for="feedback">Your feedback</label><br><br>
+        <textarea name="feedback" id="feedback"></textarea><br>
+
+        <input type="submit" name="submit" value="submit">
+    </form>
+</body>
+</html>
