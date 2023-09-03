@@ -1,0 +1,15 @@
+body{
+ background-color: rgb(58, 250, 0);
+}
+
+.div1{
+    background-image: url("webtechimg/burger.jpg");
+    height: 1000px;
+    background-attachment: fixed;
+}
+
+.div2{
+    background-image: url("webtechimg/bg.jpg");
+    height: 1000px;
+    background-attachment: scroll;
+}
