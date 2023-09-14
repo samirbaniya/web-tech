@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab2qno4</title>
+</head>
+<style>
+    .box {
+        display: none;
+    }
+
+    @media (max-width:575px){
+        #box1{
+            display: block;
+        }
+    }
+    @media (min-width:576px) and (max-width:767px){
+        #box2{
+            display: block;
+        }
+    }
+    @media (min-width:768px) and (max-width:991px){
+        #box3{
+            display: block;
+        }
+    }
+        @media (min-width:992px) and (max-width:1999px){
+        #box4{
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="box" id="box1">Mobile</div>
+    <div class="box" id="box2">Tablet</div>
+    <div class="box" id="box3">Small Laptop</div>
+    <div class="box" id="box4">Laptop/Desktop</div>
+</body>
+
+</html>
