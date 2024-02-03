@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Number Checker</title>
+  <script>
+    function isPrime(number) {
+      // Check if the number is less than 2
+      if (number < 2) {
+        return false;
+      }
+
+      for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+          return false;
+        }
+      }
+
+      return true;
+    }
+
+    function checkPrime() {
+      let number = parseInt(prompt("Enter a number:"));
+
+      if (isPrime(number)) {
+        alert(number + ' is a prime number.');
+      } else {
+        alert(number +' is not a prime number.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Prime Number Checker</h1>
+  <button onclick="checkPrime()">Check Prime</button>
+</body>
+</html>

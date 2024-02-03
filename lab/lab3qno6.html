@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Address Validation</title>
+    <script>
+        function validateEmailAddress() {
+            // Get the email address input value
+            var emailAddress = document.getElementById("emailAddress").value;
+
+            // Regular expression for a simple email address pattern
+            var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+            // Check if the entered value matches the regular expression
+            if (emailRegex.test(emailAddress)) {
+                alert("Pattern matched");
+            } else {
+                alert("Enter correct email address");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <label for="emailAddress">Email Address:</label>
+    <input type="text" id="emailAddress" placeholder="Enter your email address">
+
+    <button onclick="validateEmailAddress()">Check</button>
+
+</body>
+</html>

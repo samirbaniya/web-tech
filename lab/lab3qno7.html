@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Number Validation</title>
+</head>
+<body>
+
+  <label for="phoneNumber">Phone Number:</label>
+  <input type="text" id="phoneNumber" placeholder="Enter your phone number">
+
+  <button onclick="validatePhoneNumber()">Check Phone Number</button>
+
+  <script>
+    function validatePhoneNumber() {
+      // Get the entered phone number from the input field
+      var phoneNumberInput = document.getElementById('phoneNumber').value;
+
+      // Define a regular expression for a simple example (you may need to adjust it based on your requirements)
+      var phoneNumberRegex = /^\d{10}$/; // This example assumes a 10-digit phone number
+
+      // Check if the entered value matches the regular expression
+      if (phoneNumberRegex.test(phoneNumberInput)) {
+        alert("It's a phone number");
+      } else {
+        alert("Enter phone number correctly");
+      }
+    }
+  </script>
+
+</body>
+</html>
